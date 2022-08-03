@@ -14,9 +14,7 @@ class ConversationController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index(Request $allRequest)
-    {
-      
- 
+    { 
         $response = [];
         $allRequest = collect($allRequest->all());
         $allRequest = $allRequest->filter(); 
@@ -44,71 +42,5 @@ class ConversationController extends Controller
         }
         return response()->json($response);
         
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $allRequest
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $allRequest)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $allRequest
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $allRequest, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
+    } 
 }
